@@ -5,15 +5,30 @@ import { RouteComponentProps } from "react-router";
 import styles from "./XxxAnswersPage.module.scss";
 import sharedStyles from "../../assets/styles/XxxSharedStyles.module.scss";
 
+export interface XxxAnswersPagePropsInterface extends RouteComponentProps {}
+
+export interface XxxAnswersPageStateInterface {
+  answers: any[];
+  isEmpty: boolean;
+  isError: boolean;
+  isLoading: boolean;
+  question: any;
+}
 
 // TODO search params type for id
-
+export interface XxxAnswersPageSearchParams {
+  id?: string | undefined;
+}
 
 class XxxAnswersPage extends React.Component<
   XxxAnswersPagePropsInterface,
   XxxAnswersPageStateInterface
 > {
   // BEST PRACTICE: declare all private properties at the top
+  questionId: string = "";
+  requestUrl: string = "";
+  requestParams: any = {};
+  unlisten: any;
 
   constructor(props: XxxAnswersPagePropsInterface) {
     super(props);
