@@ -271,10 +271,6 @@ class XxxAnswersPage extends React.Component<
                 <span className={styles.answerCaption}>Score: </span>
               <div>
                 <span className={styles.answerCaption}>Answered: </span>
-                <span className={styles.answerInfo}>
-                  {this.timeToShortDate(item.creation_date)}
-                </span>
-              </div>
               <div className={styles.answerCaption}>Answer:</div>
               <div
                 className={styles.answerBody}
