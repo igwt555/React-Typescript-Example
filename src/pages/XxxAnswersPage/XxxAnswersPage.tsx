@@ -269,8 +269,6 @@ class XxxAnswersPage extends React.Component<
             >
               <div>
                 <span className={styles.answerCaption}>Score: </span>
-                <span className={styles.answerInfo}>{item.score}</span>
-              </div>
               <div>
                 <span className={styles.answerCaption}>Answered: </span>
                 <span className={styles.answerInfo}>
