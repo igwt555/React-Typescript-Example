@@ -7,14 +7,6 @@ import sharedStyles from "../../assets/styles/XxxSharedStyles.module.scss";
 
 export interface XxxAnswersPagePropsInterface extends RouteComponentProps {}
 
-export interface XxxAnswersPageStateInterface {
-  answers: any[];
-  isEmpty: boolean;
-  isError: boolean;
-  isLoading: boolean;
-  question: any;
-}
-
 // TODO search params type for id
 export interface XxxAnswersPageSearchParams {
   id?: string | undefined;
