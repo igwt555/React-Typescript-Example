@@ -268,21 +268,9 @@ class XxxAnswersPage extends React.Component<
               key={item.answer_id}
             >
               <div>
-                <span className={styles.answerCaption}>Score: </span>
-              <div>
-                <span className={styles.answerCaption}>Answered: </span>
-              <div className={styles.answerCaption}>Answer:</div>
-              <div
-   
-        </div>
-      );
+
     }
-    return (
-      <div className={sharedStyles.page}>
-        <div className={sharedStyles.pageTitle}>Stack Exchange Answers</div>
-        <div className={sharedStyles.mainCard}>{pageView}</div>
-      </div>
-    );
+
   }
 }
 
