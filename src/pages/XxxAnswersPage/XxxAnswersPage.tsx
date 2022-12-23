@@ -8,9 +8,7 @@ import sharedStyles from "../../assets/styles/XxxSharedStyles.module.scss";
 export interface XxxAnswersPagePropsInterface extends RouteComponentProps {}
 
 // TODO search params type for id
-export interface XxxAnswersPageSearchParams {
-  id?: string | undefined;
-}
+
 
 class XxxAnswersPage extends React.Component<
   XxxAnswersPagePropsInterface,
