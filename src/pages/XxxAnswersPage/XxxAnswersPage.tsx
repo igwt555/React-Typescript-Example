@@ -262,3 +262,38 @@ class XxxAnswersPage extends React.Component<
             <div
               className={
                 item.is_accepted
+                  ? styles.answerAccepted
+                  : styles.answerNotAccepted
+              }
+              key={item.answer_id}
+            >
+              <div>
+                <span className={styles.answerCaption}>Score: </span>
+                <span className={styles.answerInfo}>{item.score}</span>
+              </div>
+              <div>
+                <span className={styles.answerCaption}>Answered: </span>
+                <span className={styles.answerInfo}>
+                  {this.timeToShortDate(item.creation_date)}
+                </span>
+              </div>
+              <div className={styles.answerCaption}>Answer:</div>
+              <div
+                className={styles.answerBody}
+                dangerouslySetInnerHTML={{ __html: item.body } || ""}
+              ></div>
+            </div>
+          ))}
+        </div>
+      );
+    }
+    return (
+      <div className={sharedStyles.page}>
+        <div className={sharedStyles.pageTitle}>Stack Exchange Answers</div>
+        <div className={sharedStyles.mainCard}>{pageView}</div>
+      </div>
+    );
+  }
+}
+
+export default XxxAnswersPage;
