@@ -262,16 +262,3 @@ class XxxAnswersPage extends React.Component<
             <div
               className={
                 item.is_accepted
-                  ? styles.answerAccepted
-                  : styles.answerNotAccepted
-              }
-              key={item.answer_id}
-            >
-              <div>
-
-    }
-
-  }
-}
-
-export default XxxAnswersPage;
