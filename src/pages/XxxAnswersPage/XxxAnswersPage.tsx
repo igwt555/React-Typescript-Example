@@ -17,10 +17,6 @@ class XxxAnswersPage extends React.Component<
   XxxAnswersPageStateInterface
 > {
   // BEST PRACTICE: declare all private properties at the top
-  questionId: string = "";
-  requestUrl: string = "";
-  requestParams: any = {};
-  unlisten: any;
 
   constructor(props: XxxAnswersPagePropsInterface) {
     super(props);
