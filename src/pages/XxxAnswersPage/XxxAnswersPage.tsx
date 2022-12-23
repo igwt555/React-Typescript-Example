@@ -5,7 +5,6 @@ import { RouteComponentProps } from "react-router";
 import styles from "./XxxAnswersPage.module.scss";
 import sharedStyles from "../../assets/styles/XxxSharedStyles.module.scss";
 
-export interface XxxAnswersPagePropsInterface extends RouteComponentProps {}
 
 // TODO search params type for id
 
