@@ -273,11 +273,7 @@ class XxxAnswersPage extends React.Component<
                 <span className={styles.answerCaption}>Answered: </span>
               <div className={styles.answerCaption}>Answer:</div>
               <div
-                className={styles.answerBody}
-                dangerouslySetInnerHTML={{ __html: item.body } || ""}
-              ></div>
-            </div>
-          ))}
+   
         </div>
       );
     }
